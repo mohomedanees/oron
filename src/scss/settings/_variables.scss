@@ -1,0 +1,64 @@
+// Site Variables
+//
+
+/* -----------------
+Sass Rem Settings
+----------------- */
+$rem-fallback: true;
+$rem-baseline: 10px;
+
+/* -----------------
+Variables
+----------------- */
+$em-base: 10px;
+$base-font-size: 16px;
+$large-font-size: 18px;
+$larger-font-size: 30px;
+$medium-font-size: 16px;
+$small-font-size: 14px;
+$xsmall-font-size: 12px;
+
+$h1-font-size: 20px;
+$base-line-height: 1.6;
+$heading-line-height: 1.2;
+$heading-line-height-mobile: 1.4;
+
+//$font-sans: 'Source Sans Pro';
+$font-roboto: 'Roboto';
+$font-rb-cond: 'Roboto Condensed';
+
+$font-thinnest: 100;
+$font-thin: 200;
+$font-normal: 400;
+$font-medium: 500;
+$font-bold: 700;
+
+// ----COLORS----
+$color-white: #fff;
+$color-black: #000;
+
+$color-primary: #2b2926;
+$color-orange: #ffa300;
+$color-light-gray: #c4c3c0;
+$color-gray: #8a8987;
+$color-dark-gray: #544a4a;
+
+// ---- TRANSITIONS ----
+$cubic-transition: cubic-bezier(0, 0, .2, 1);
+
+// ---- BREAKPOINTS ----
+$smaller-screen: (
+  media: 480px
+);
+
+$small-screen: (
+  media: 768px
+);
+
+$medium-screen: (
+  media: 992px
+);
+
+$large-screen: (
+  media: 1200px
+);

@@ -1,0 +1,36 @@
+/* -----------------
+Typography
+----------------- */
+
+// DEFAULTS - Overrides to basic text styles
+html {
+  color: $color-primary;
+  @include rem-baseline;
+}
+
+body {
+  font-size: $base-font-size;
+  font-family: $font-roboto;
+  font-weight: $font-normal;
+}
+
+p {
+  line-height: $base-line-height;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both;
+  font-family: $font-rb-cond;
+  font-weight: $font-bold;
+  line-height: $heading-line-height;
+  margin-bottom: .5em;
+  margin-top: 1.5em;
+  color: $color-primary;
+}

@@ -1,0 +1,22 @@
+/* -----------------
+Register
+----------------- */
+.register {
+  padding-top: rem(50px);
+}
+
+.reg-wrapper {
+  margin: rem(0 auto 40px);
+  text-align: center;
+  max-width: 150px;
+}
+
+.reg__title {
+  @include rem(font-size, $larger-font-size);
+  border-bottom: 2px solid $color-orange;
+  padding-bottom: rem(10px);
+}
+
+.reg__subtitle {
+  @include rem(font-size, $h1-font-size);
+}

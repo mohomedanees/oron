@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<!--==================== Google Fonts ==================-->
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,300,700' rel='stylesheet' type='text/css'>
+
+	<!--======================= CSS ========================-->
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="src/css/font-awesome.min.css">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="src/css/bootstrap.min.css">
+
+	<!-- Main Styles -->
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="body-offcanvas">
+
+  <!-- ==================== Header ===================== -->
+  <header class="clearfix">
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <!-- <a class="navbar-brand" href="#">Brand</a> -->
+          <button type="button" class="navbar-toggle offcanvas-toggle pull-left" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas">
+            <span class="sr-only">Toggle navigation</span>
+            <span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </span>
+          </button>
+          
+          <h1 class="navbar-header__title">Login</h1>
+        </div>
+        <div class="navbar-offcanvas navbar-offcanvas-touch" id="js-bootstrap-offcanvas">
+          <a href="#" class="close-icon"><img src="assets/img/close-icon.svg" alt=""></a>
+          <ul class="nav navbar-nav">
+            <li class="prof-icon">
+              <img src="assets/img/prof-icon.svg" alt="">
+              <h1 class="prof-name">MKS Distributors</h1>
+            </li>
+            <li><a href="#">Profile</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle">Buying <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Suppliers</a></li>
+                <li><a href="#">Purchases</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle">Selling <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Sales Reps</a></li>
+                <li><a href="#">Customers</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Sales</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Help & Feedback</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+	<!-- ================== End Header =================== -->
+
+
+  <!-- ============ Main Footer Menu Mobile ============ -->
+  <div class="mob-menu">
+    <div class="col-xs-3 mob-menu__column">
+      <a href="#">
+        <i class="fa fa-address-book" aria-hidden="true"></i>
+        Products
+      </a>
+    </div>
+    <div class="col-xs-3 mob-menu__column">
+      <a href="#">
+        <i class="fa fa-address-book" aria-hidden="true"></i>
+        Sales
+      </a>
+    </div>
+    <div class="col-xs-3 mob-menu__column">
+      <a href="#">
+        <i class="fa fa-address-book" aria-hidden="true"></i>
+        Purchases
+      </a>
+    </div>
+    <div class="col-xs-3 mob-menu__column">
+      <a href="#">
+        <i class="fa fa-address-book" aria-hidden="true"></i>
+        Home
+      </a>
+    </div>
+  </div>
+  <!-- ========== End Main Footer Menu Mobile ========== -->
+
+
+	<!-- ================== Main Wrapper ================= -->
+	<div class="container">
+    <div class="login__main-logo">
+      <img src="assets/img/oron-logo.png" alt="">
+      <h1 class="login__logo-name">Oron</h1>
+    </div>
+
+    <form>
+      <div class="form-group">
+        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+      </div>
+      <div class="btn-wrapper">
+        <button type="submit" class="button button-orange">Login</button>
+      </div>
+    </form>
+
+    <h2 class="login__text">Don't have an account</h2>
+
+    <div class="btn-wrapper btn-wrapper__orange">
+      <button type="submit" class="button button-orange--outlined button--shadow">
+        Create an Account
+      </button>
+    </div>
+
+    <div class="terms">
+      <p>Terms of use. <a href="#">Cookie policy</a> and <a href="#">Privacy policy</a></p>
+    </div>
+
+  </div>
+	<!-- ================= End Main Wrapper ================ -->
+
+
+	<!-- ======================== JS ========================= -->
+
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- jQuery -->
+	<script src="src/js/vendor/jquery.js"></script>
+
+  <!-- Bootstrap -->
+  <!-- <script src="src/js/vendor/bootstrap.min.js"></script> -->
+
+  <!-- Off Canvas Menu -->
+  <script src="src/js/vendor/bootstrap.offcanvas.min.js"></script>
+
+	<!-- Main JS -->
+	<script src="assets/js/source.dev.js"></script>
+
+	</body>
+</html>

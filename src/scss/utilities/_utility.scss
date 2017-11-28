@@ -1,0 +1,64 @@
+/**
+* Utility classes
+*/
+
+// HIDE/SHOW - Utilities for hiding and showing content
+.hidden {
+  display: none !important;
+}
+
+.show {
+  display: block;
+}
+
+//FLOATS - Utilities for floating content
+.pull-r {
+  float: right;
+}
+
+.pull-l {
+  float: left;
+}
+
+//PUSH - Push elements
+.push-l {
+  @include grid-media($medium-screen) {
+    padding-left: 25rem;
+  }
+}
+
+//HIDE - Desktop
+.hide-desktop {
+  display: block;
+
+  @include grid-media($small-screen) {
+    display: none;
+  }
+}
+
+//HIDE - Mobile
+.hide-mobile {
+  display: none;
+
+  @include grid-media($small-screen) {
+    display: block;
+  }
+}
+
+.no-top-margin {
+  margin-top: 0;
+}
+
+.no-bottom-margin {
+  margin-bottom: 0;
+}
+
+//INNER PADDING
+//Use when padding need from both sides
+//for an element inside a row element
+.padding-rl {
+  @include grid-media($medium-screen) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}

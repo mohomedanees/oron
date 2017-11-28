@@ -1,0 +1,44 @@
+/* -----------------
+Buttons
+----------------- */
+button,
+input {
+  outline: none;
+}
+
+.btn-wrapper {
+  text-align: center;
+  @include grid-container;
+  margin-top: rem(40px);
+
+  &__orange {
+    margin-top: rem(25px);
+  }
+}
+
+.button {
+  padding: rem(7.5px 25px);
+  max-width: 225px;
+  width: 100%;
+  font-family: $font-rb-cond;
+  font-weight: $font-bold;
+  @include rem(font-size, $large-font-size);
+}
+
+.button--shadow {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+}
+
+.button-orange {
+  background: $color-orange;
+  border-radius: 4px;
+  color: $color-primary;
+  border: none;
+}
+
+.button-orange--outlined {
+  background: linear-gradient(to bottom, rgba(88, 88, 88, 1) 0%, rgba(0, 0, 0, 1) 100%);
+  color: $color-orange;
+  border-radius: 25px;
+  border: 1px solid $color-orange;
+}

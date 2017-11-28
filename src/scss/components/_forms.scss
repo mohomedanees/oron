@@ -1,0 +1,10 @@
+/* -----------------
+Forms
+----------------- */
+.form-control {
+  color: $color-primary;
+
+  @include placeholder {
+    color: $color-primary !important;
+  }
+}

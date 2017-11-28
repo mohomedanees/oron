@@ -1,0 +1,32 @@
+/* -----------------
+Login
+----------------- */
+.login__main-logo {
+  text-align: center;
+}
+
+.login__main-logo {
+  margin-bottom: rem(30px);
+}
+
+.login__logo-name {
+  margin-top: rem(5px);
+  font-family: $font-roboto;
+  @include rem(font-size, $larger-font-size);
+}
+
+.login__text {
+  display: block;
+  text-align: center;
+  @include rem(font-size, $large-font-size);
+}
+
+.terms {
+  display: block;
+  max-width: 185px;
+  margin: 0 auto;
+  text-align: center;
+  color: $color-gray;
+  margin-top: rem(15px);
+  @include rem(font-size, $xsmall-font-size);
+}

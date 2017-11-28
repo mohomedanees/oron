@@ -1,0 +1,139 @@
+/* -----------------
+Navigation
+----------------- */
+
+.navbar {
+  border-radius: 0;
+  border: none;
+}
+
+.navbar-header {
+  text-align: center;
+  position: relative;
+
+  @include grid-media($small-screen) {
+    width: 100%;
+  }
+}
+
+.navbar-header__title {
+  @include rem(font-size, $h1-font-size);
+  color: $color-white;
+  position: absolute;
+  left: 50%;
+  line-height: 50px;
+  margin: 0;
+  transform: translateX(-50%);
+}
+
+.navbar-default {
+  &,
+  .navbar-offcanvas {
+    background: $color-primary;
+  }
+
+  .navbar-nav {
+    > .active {
+      > a {
+        &,
+        &:hover,
+        &:focus {
+          color: $color-orange;
+          background: none;
+        }
+      }
+    }
+    > li {
+      float: left;
+      width: 100%;
+      border-bottom: 1px solid $color-black;
+      box-shadow: 0 1px 0 $color-dark-gray;
+
+      &.dropdown {
+        border: none;
+      }
+
+      > a {
+        @include rem(font-size, $large-font-size);
+        color: $color-light-gray;
+        padding-top: rem(15px);
+        padding-bottom: rem(15px);
+
+        &:hover,
+        &:focus {
+          color: $color-orange;
+        }
+      }
+    }
+  }
+
+  .navbar-toggle {
+    border: none;
+    padding-left: 0;
+    padding-right: 0;
+
+    &:hover,
+    &:focus {
+      background: none;
+    }
+
+    .icon-bar {
+      background: $color-orange;
+    }
+  }
+}
+
+.navbar-toggle {
+  display: block;
+  margin-left: rem(15px);
+}
+
+.dropdown-menu {
+  background: none;
+  padding: 0;
+  margin: 0 !important;
+  border: none !important;
+
+  > li {
+    border-bottom: 1px solid $color-black;
+    box-shadow: 0 1px 0 $color-dark-gray;
+
+    > a {
+      @include rem(font-size, $medium-font-size);
+      color: $color-light-gray;
+      padding: rem(15px 0 15px 40px);
+
+      &:hover,
+      &:focus {
+        background: none;
+        color: $color-orange;
+      }
+    }
+  }
+}
+
+.dropdown-toggle {
+  border-bottom: 1px solid $color-black;
+  box-shadow: 0 1px 0 $color-dark-gray;
+}
+
+.close-icon {
+  display: block;
+  text-align: right;
+  margin-top: rem(15px);
+  img {
+    max-width: 16px;
+  }
+}
+
+.prof-icon {
+  text-align: center;
+  padding-top: rem(15px);
+
+  .prof-name {
+    @include rem(font-size, $h1-font-size);
+    color: $color-orange;
+    font-family: $font-roboto;
+    margin: rem(25px 0);
+  }
+}

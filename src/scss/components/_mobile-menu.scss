@@ -1,0 +1,28 @@
+/* -----------------
+Mobile Menu
+----------------- */
+
+.mob-menu {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: $color-primary;
+  padding: rem(10px 0);
+
+  @include grid-media($small-screen) {
+    display: none;
+  }
+}
+
+.mob-menu__column {
+  padding: 0;
+  font-family: $font-rb-cond;
+  font-weight: $font-normal;
+  text-align: center;
+
+  .fa {
+    display: block;
+    margin-bottom: rem(5px);
+    color: $color-light-gray;
+  }
+}
