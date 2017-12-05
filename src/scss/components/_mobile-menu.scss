@@ -21,7 +21,7 @@ Mobile Menu
   text-align: center;
 
   a {
-    @include rem(font-size, $small-font-size);
+    @include rem(font-size, $xsmall-font-size);
   }
 
   .fa,

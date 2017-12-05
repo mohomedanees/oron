@@ -54,9 +54,16 @@ Icons
   }
 }
 
-.icon-selling {
+.icon-sales {
   &:before {
-    background: url('../img/selling-icon.svg') center center no-repeat;
+    background: url('../img/sales-icon.svg') center center no-repeat;
+    background-size: cover;
+  }
+}
+
+.icon-orders {
+  &:before {
+    background: url('../img/order-icon.svg') center center no-repeat;
     background-size: cover;
   }
 }
@@ -78,13 +85,6 @@ Icons
 .icon-products {
   &:before {
     background: url('../img/products-icon.svg') center center no-repeat;
-    background-size: cover;
-  }
-}
-
-.icon-sales {
-  &:before {
-    background: url('../img/sales-icon.svg') center center no-repeat;
     background-size: cover;
   }
 }

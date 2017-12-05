@@ -63,8 +63,8 @@ Navigation
       > a {
         @include rem(font-size, $large-font-size);
         color: $color-light-gray;
-        padding-top: rem(10px);
-        padding-bottom: rem(10px);
+        padding-top: rem(12px);
+        padding-bottom: rem(12px);
 
         &:hover,
         &:focus {
@@ -72,7 +72,7 @@ Navigation
         }
 
         .icon {
-          margin-right: rem(10px);
+          margin-right: rem(8px);
         }
       }
     }
@@ -112,7 +112,11 @@ Navigation
     > a {
       @include rem(font-size, $medium-font-size);
       color: $color-light-gray;
-      padding: rem(15px 0 15px 40px);
+      padding: rem(12px 0 12px 40px);
+
+      .icon {
+        margin-right: rem(8px);
+      }
 
       &:hover,
       &:focus {
