@@ -6,7 +6,7 @@ Register
 }
 
 .reg-wrapper {
-  margin: rem(0 auto 40px);
+  margin: rem(0 auto 30px);
   text-align: center;
   max-width: 150px;
 }
@@ -15,8 +15,10 @@ Register
   @include rem(font-size, $larger-font-size);
   border-bottom: 2px solid $color-orange;
   padding-bottom: rem(10px);
+  margin-top: 0;
 }
 
 .reg__subtitle {
   @include rem(font-size, $h1-font-size);
+  margin-top: rem(15px);
 }

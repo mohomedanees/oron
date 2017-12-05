@@ -7,7 +7,6 @@ Icons
     position: relative;
     top: 3px;
     display: inline-block;
-    margin-right: 1rem;
     width: 20px;
     height: 20px;
   }
@@ -16,6 +15,90 @@ Icons
 .icon-settings {
   &:before {
     background: url('../img/settings-icon.svg') center center no-repeat;
+    background-size: cover;
+  }
+}
+
+.icon-buy {
+  &:before {
+    background: url('../img/buying-icon.svg') center center no-repeat;
+    background-size: cover;
+  }
+}
+
+.icon-profile {
+  &:before {
+    background: url('../img/profile-icon.svg') center center no-repeat;
+    background-size: cover;
+  }
+}
+
+.icon-delete {
+  &:before {
+    background: url('../img/delete-icon.svg') center center no-repeat;
+    background-size: cover;
+  }
+}
+
+.icon-suppliers {
+  &:before {
+    background: url('../img/suppliers-icon.svg') center center no-repeat;
+    background-size: cover;
+  }
+}
+
+.icon-purchases {
+  &:before {
+    background: url('../img/purchases-icon.svg') center center no-repeat;
+    background-size: cover;
+  }
+}
+
+.icon-selling {
+  &:before {
+    background: url('../img/selling-icon.svg') center center no-repeat;
+    background-size: cover;
+  }
+}
+
+.icon-salesrep {
+  &:before {
+    background: url('../img/salesrep-icon.svg') center center no-repeat;
+    background-size: cover;
+  }
+}
+
+.icon-customers {
+  &:before {
+    background: url('../img/customers-icon.svg') center center no-repeat;
+    background-size: cover;
+  }
+}
+
+.icon-products {
+  &:before {
+    background: url('../img/products-icon.svg') center center no-repeat;
+    background-size: cover;
+  }
+}
+
+.icon-sales {
+  &:before {
+    background: url('../img/sales-icon.svg') center center no-repeat;
+    background-size: cover;
+  }
+}
+
+.icon-help {
+  &:before {
+    background: url('../img/help-icon.svg') center center no-repeat;
+    background-size: cover;
+  }
+}
+
+.icon-home {
+  &:before {
+    background: url('../img/home-icon.svg') center center no-repeat;
     background-size: cover;
   }
 }

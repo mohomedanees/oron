@@ -1,0 +1,15 @@
+/* -----------------
+Home
+----------------- */
+.content-wrapper {
+  text-align: center;
+
+  .hmw-title {
+    margin-top: 0;
+    @include rem(font-size, 24px);
+  }
+
+  .hmw-subtitle {
+    margin-top: rem(10px);
+  }
+}

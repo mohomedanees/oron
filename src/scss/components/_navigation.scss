@@ -70,6 +70,10 @@ Navigation
         &:focus {
           color: $color-orange;
         }
+
+        .icon {
+          margin-right: rem(10px);
+        }
       }
     }
   }

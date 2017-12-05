@@ -20,9 +20,10 @@ Mobile Menu
   font-weight: $font-normal;
   text-align: center;
 
-  .fa {
+  .fa,
+  .icon {
     display: block;
-    margin-bottom: rem(5px);
+    margin-bottom: 0;
     color: $color-light-gray;
   }
 }
