@@ -11,5 +11,7 @@ Home
 
   .hmw-subtitle {
     margin-top: rem(10px);
+    @include rem(font-size, $large-font-size);
+    color: $color-orange;
   }
 }
