@@ -63,8 +63,8 @@ Navigation
       > a {
         @include rem(font-size, $large-font-size);
         color: $color-light-gray;
-        padding-top: rem(15px);
-        padding-bottom: rem(15px);
+        padding-top: rem(10px);
+        padding-bottom: rem(10px);
 
         &:hover,
         &:focus {

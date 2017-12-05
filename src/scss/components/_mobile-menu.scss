@@ -7,7 +7,7 @@ Mobile Menu
   bottom: 0;
   width: 100%;
   background: $color-primary;
-  padding: rem(10px 0);
+  padding: rem(5px 0);
 
   @include grid-media($small-screen) {
     display: none;
@@ -19,6 +19,10 @@ Mobile Menu
   font-family: $font-opsans;
   font-weight: $font-normal;
   text-align: center;
+
+  a {
+    @include rem(font-size, $small-font-size);
+  }
 
   .fa,
   .icon {
