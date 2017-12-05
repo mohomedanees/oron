@@ -3,16 +3,17 @@ Login
 ----------------- */
 .login__main-logo {
   text-align: center;
-}
-
-.login__main-logo {
   margin-bottom: rem(30px);
+  display: block;
+
+  img {
+    max-width: 88px;
+  }
 }
 
 .login__logo-name {
   margin-top: rem(5px);
-  font-family: $font-roboto;
-  @include rem(font-size, $larger-font-size);
+  @include rem(font-size, 25px);
 }
 
 .login__text {

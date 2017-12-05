@@ -4,17 +4,19 @@ Icons
 .icon {
   &:before {
     content: '';
+    position: relative;
+    top: 3px;
     display: inline-block;
     margin-right: 1rem;
+    width: 20px;
+    height: 20px;
   }
 }
 
-.icon-download {
+.icon-settings {
   &:before {
-    background: url('../img/download-icon.svg') center center no-repeat;
+    background: url('../img/settings-icon.svg') center center no-repeat;
     background-size: cover;
-    width: 18px;
-    height: 18px;
   }
 }
 

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="309px" height="305px" viewBox="0 0 309 305" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>ORON Logo - 512x512</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ORON-Logo---512x512" fill-rule="nonzero">
+            <g id="final_A">
+                <ellipse id="Oval" fill="#FFA300" cx="116.9" cy="189.2" rx="32.6" ry="33.5"></ellipse>
+                <path d="M170.5,227.6 C150.3,256.1 124.1,255.7 117,256 C83.2,257.3 64.4,237.6 57.8,226.1 C36.8,186.9 56.4,159.5 61.6,151.8 C66.3,144.4 72.1,138.9 78.2,134.8 L62.2,90.1 C48.1,96 34.3,107.6 21.9,123.4 C-14.5,175.8 5.7,229.4 12.9,243.6 L12.8,243.6 C25.5,266.6 51.2,302.3 115.7,304.9 C184.2,304.8 212.7,248.2 215.1,243.2 L170.5,227.6 Z" id="Shape" fill="#2A2926"></path>
+                <path d="M197.8,106.6 C160.7,71 117.4,74.4 95.1,79.2 L109.4,123.6 C140.8,119.5 158,136.5 163.1,141 C184.2,159.7 185.6,182.1 183.7,196.5 L227.4,208.3 C232.5,181.2 233.2,140.6 197.8,106.6 Z" id="Shape" fill="#FFA300"></path>
+                <path d="M250.4,48.9 C186.7,-12.1 99.3,-0.7 66.7,6.2 L82.4,49.4 C155.9,32.4 205.2,66 219.8,81.4 C268.1,124.1 263.9,189.5 259.4,216.9 L304.1,228.9 C314.6,187.3 312,105.7 250.4,48.9 Z" id="Shape" fill="#FFA300"></path>
+            </g>
+        </g>
+    </g>
+</svg>

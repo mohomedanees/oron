@@ -24,14 +24,13 @@ $heading-line-height: 1.2;
 $heading-line-height-mobile: 1.4;
 
 //$font-sans: 'Source Sans Pro';
-$font-roboto: 'Roboto';
-$font-rb-cond: 'Roboto Condensed';
+$font-opsans: 'Open Sans';
 
-$font-thinnest: 100;
-$font-thin: 200;
+$font-thin: 300;
 $font-normal: 400;
-$font-medium: 500;
+$font-medium: 600;
 $font-bold: 700;
+$font-extrabold: 800;
 
 // ----COLORS----
 $color-white: #fff;
@@ -39,6 +38,7 @@ $color-black: #000;
 
 $color-primary: #2b2926;
 $color-orange: #ffa300;
+$color-lighter-gray: #a5a3a1;
 $color-light-gray: #c4c3c0;
 $color-gray: #8a8987;
 $color-dark-gray: #544a4a;

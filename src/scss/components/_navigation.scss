@@ -1,10 +1,15 @@
 /* -----------------
 Navigation
 ----------------- */
-
 .navbar {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  width: 100%;
   border-radius: 0;
   border: none;
+  margin-bottom: 0;
+  padding: rem(0 15px);
 }
 
 .navbar-header {
@@ -18,6 +23,7 @@ Navigation
 
 .navbar-header__title {
   @include rem(font-size, $h1-font-size);
+  font-weight: $font-normal;
   color: $color-white;
   position: absolute;
   left: 50%;
@@ -48,6 +54,7 @@ Navigation
       width: 100%;
       border-bottom: 1px solid $color-black;
       box-shadow: 0 1px 0 $color-dark-gray;
+      margin: 0;
 
       &.dropdown {
         border: none;
@@ -85,7 +92,6 @@ Navigation
 
 .navbar-toggle {
   display: block;
-  margin-left: rem(15px);
 }
 
 .dropdown-menu {
@@ -97,6 +103,7 @@ Navigation
   > li {
     border-bottom: 1px solid $color-black;
     box-shadow: 0 1px 0 $color-dark-gray;
+    margin: 0;
 
     > a {
       @include rem(font-size, $medium-font-size);
@@ -130,10 +137,24 @@ Navigation
   text-align: center;
   padding-top: rem(15px);
 
-  .prof-name {
+  .prof__img {
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+    border-radius: 100%;
+    border: 2px solid $color-orange;
+    background-size: cover !important;
+  }
+
+  .prof__name {
     @include rem(font-size, $h1-font-size);
     color: $color-orange;
-    font-family: $font-roboto;
     margin: rem(25px 0);
   }
+}
+
+.btn-right {
+  float: right;
+  @include rem(font-size, 22px);
+  margin-top: rem(10px);
 }

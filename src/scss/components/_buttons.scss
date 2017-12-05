@@ -18,11 +18,20 @@ input {
 
 .button {
   padding: rem(7.5px 25px);
-  max-width: 225px;
+  max-width: 300px;
+  margin: 0 auto;
+  display: block;
   width: 100%;
-  font-family: $font-rb-cond;
   font-weight: $font-bold;
   @include rem(font-size, $large-font-size);
+}
+
+.button__merge {
+  max-width: 300px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  width: 100%;
 }
 
 .button--shadow {
@@ -36,9 +45,67 @@ input {
   border: none;
 }
 
+.button-black {
+  background: $color-primary;
+  border-radius: 4px;
+  color: $color-orange;
+  border: none;
+  @include rem(font-size, $base-font-size);
+  font-weight: $font-normal;
+  max-height: 30px;
+  line-height: 30px;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  .fa {
+    margin-right: rem(5px);
+  }
+
+  &--merged {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 34px;
+    max-width: 35px;
+    max-height: 34px;
+    padding: 0;
+    text-align: center;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+
+    .fa {
+      margin: 0;
+    }
+  }
+}
+
 .button-orange--outlined {
   background: linear-gradient(to bottom, rgba(88, 88, 88, 1) 0%, rgba(0, 0, 0, 1) 100%);
   color: $color-orange;
   border-radius: 25px;
   border: 1px solid $color-orange;
+}
+
+.add-button {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+  background: $color-orange;
+  color: $color-primary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  @include rem(font-size, 28px);
+  font-weight: $font-medium;
+  box-shadow: 0 -1px 3px rgba(125, 122, 122, .5);
+
+  &:hover,
+  &:focus {
+    background: $color-primary;
+    color: $color-orange;
+  }
 }

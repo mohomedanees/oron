@@ -20,13 +20,6 @@
   float: left;
 }
 
-//PUSH - Push elements
-.push-l {
-  @include grid-media($medium-screen) {
-    padding-left: 25rem;
-  }
-}
-
 //HIDE - Desktop
 .hide-desktop {
   display: block;
@@ -45,20 +38,19 @@
   }
 }
 
-.no-top-margin {
-  margin-top: 0;
+//FULL HEIGHT
+.full-height {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.no-bottom-margin {
-  margin-bottom: 0;
-}
+//WRAPPER
+.wrapper {
+  padding: rem(122.5px 0 65px);
 
-//INNER PADDING
-//Use when padding need from both sides
-//for an element inside a row element
-.padding-rl {
-  @include grid-media($medium-screen) {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+  &--product {
+    padding: rem(82.5px 0 65px);
   }
 }

@@ -1,0 +1,137 @@
+/* -----------------
+Lists
+----------------- */
+ul,
+ol {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  list-style: none;
+  padding-left: 0;
+  display: table;
+  li {
+    line-height: 1.5;
+    margin-bottom: .75em;
+    margin-top: .75em;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      margin-bottom: .6em;
+    }
+  }
+}
+
+// UNORDERED LIST
+ul li {
+  display: table-row;
+  &:before {
+    content: '\25aa';
+    display: table-cell;
+    padding-right: .4em;
+  }
+}
+
+// UNSTYLED LIST - Remove bullet points from UL
+.list-unstyled {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  // margin-bottom: 1rem;
+
+  li {
+    display: list-item;
+    margin: 0;
+    margin-bottom: rem(10px);
+    &:before,
+    &:after {
+      content: none;
+    }
+  }
+}
+
+//NORMAL LIST
+.list {
+  &,
+  > div {
+    width: 100%;
+    padding: rem(15px 0 0);
+
+    > a {
+      display: flex;
+      width: 100%;
+    }
+
+    > li {
+      @include grid-container;
+      width: 100%;
+      padding: 0;
+      border-bottom: 1px solid $color-orange;
+      // transition: all .4s ease;
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+
+    .list__img {
+      width: 100px;
+      height: 80px;
+      border-radius: 4px;
+      border: 2px solid $color-lighter-gray;
+      float: left;
+      margin-right: rem(15px);
+      background-size: cover !important;
+    }
+
+    .list__content {
+      float: left;
+
+      .lc__title {
+        @include rem(font-size, $large-font-size);
+        font-weight: $font-medium;
+        color: $color-primary;
+      }
+
+      .lc__text {
+        @include rem(font-size, $base-font-size);
+        font-weight: $font-thin;
+        color: $color-lighter-gray;
+      }
+    }
+  }
+}
+
+//GRID LIST
+.list__grid {
+  > li {
+    border: none;
+    width: 50%;
+    padding: rem(0 15px);
+
+    @include grid-media($small-screen) {
+      width: 25%;
+    }
+
+    @include grid-media($medium-screen) {
+      width: 20%;
+    }
+
+    @include grid-media($large-screen) {
+      width: 16.6667%;
+    }
+
+    &:after {
+      display: none;
+    }
+  }
+
+  .list__img {
+    margin: rem(0 0 5px);
+    width: 100%;
+    height: 100px;
+  }
+}

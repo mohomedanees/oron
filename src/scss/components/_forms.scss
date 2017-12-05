@@ -1,6 +1,13 @@
 /* -----------------
 Forms
 ----------------- */
+input,
+textarea,
+select {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
 .form-control {
   color: $color-primary;
 
