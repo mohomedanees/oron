@@ -8,6 +8,7 @@ Mobile Menu
   width: 100%;
   background: $color-primary;
   padding: rem(5px 0);
+  border-top: 2px solid $color-orange;
 
   @include grid-media($small-screen) {
     display: none;

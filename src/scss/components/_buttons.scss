@@ -86,15 +86,59 @@ input {
   border: 1px solid $color-orange;
 }
 
-.add-button {
+.button-delete {
+  background: $color-orange;
+  border-radius: 4px;
   position: absolute;
-  top: -20px;
-  left: 50%;
-  transform: translateX(-50%);
+  right: 0;
+  bottom: 0;
+  padding: rem(0 4px);
+
+  &:hover,
+  &:focus {
+    background: $color-primary;
+    .icon-delete--black {
+      &:before {
+        background: url('../img/delete-icon.svg') center center no-repeat;
+      }
+    }
+  }
+}
+
+.back-button {
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  background: $color-orange;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover,
+  &:focus {
+    background: $color-primary;
+
+    .icon-back--black {
+      &:before {
+        background: url('../img/back-icon.svg') center center no-repeat;
+      }
+    }
+  }
+}
+
+.round-button__wrapper {
+  position: fixed;
+  bottom: 56px;
+  right: 0;
+  padding: rem(15px);
+}
+
+.button--round {
   width: 40px;
   height: 40px;
   background: $color-orange;
   color: $color-primary;
+  transition: .4s all $cubic-transition;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -107,5 +151,33 @@ input {
   &:focus {
     background: $color-primary;
     color: $color-orange;
+  }
+}
+
+.add-button {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.b-btn {
+  background-size: 18px !important;
+  margin: rem(10px 0);
+}
+
+.save-button {
+  background: url('../img/save-icon.svg') $color-orange center center no-repeat;
+  &:hover,
+  &:focus {
+    background: url('../img/save-icon--orange.svg') $color-primary center center no-repeat;
+  }
+}
+
+.cancel-button {
+  background: url('../img/cancel-icon--black.svg') $color-orange center center no-repeat;
+  &:hover,
+  &:focus {
+    background: url('../img/cancel-icon.svg') $color-primary center center no-repeat;
   }
 }

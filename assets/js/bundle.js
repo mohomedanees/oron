@@ -44,8 +44,10 @@
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	'use strict';var _navigation = __webpack_require__(3);var _navigation2 = _interopRequireDefault(_navigation);
-	var _gridToggle = __webpack_require__(2);var _gridToggle2 = _interopRequireDefault(_gridToggle);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+	'use strict';var _navigation = __webpack_require__(4);var _navigation2 = _interopRequireDefault(_navigation);
+	var _gridToggle = __webpack_require__(3);var _gridToggle2 = _interopRequireDefault(_gridToggle);
+	var _tab = __webpack_require__(5);var _tab2 = _interopRequireDefault(_tab);
+	var _datePicker = __webpack_require__(2);var _datePicker2 = _interopRequireDefault(_datePicker);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 
 	function ready(fn) {
 	  if (document.readyState === 'loading') {
@@ -58,6 +60,8 @@
 	function init() {
 	  (0, _navigation2.default)();
 	  (0, _gridToggle2.default)();
+	  (0, _tab2.default)();
+	  (0, _datePicker2.default)();
 	}
 
 	ready(init);
@@ -70,6 +74,23 @@
 
 /***/ }),
 /* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function($) {'use strict';Object.defineProperty(exports, "__esModule", { value: true });exports.default =
+
+
+
+	function () {
+	  $(function () {
+	    $('.datepicker').datetimepicker({
+	      format: 'DD/MM/YYYY' });
+
+	  });
+	};
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+
+/***/ }),
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function($) {'use strict';Object.defineProperty(exports, "__esModule", { value: true });exports.default =
@@ -97,7 +118,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 3 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function($) {'use strict';Object.defineProperty(exports, "__esModule", { value: true });exports.default =
@@ -114,6 +135,35 @@
 	    offCanvas.removeClass('in');
 	    button.removeClass('is-open');
 	    body.removeClass('offcanvas-stop-scrolling');
+	  });
+	};
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function($) {"use strict";Object.defineProperty(exports, "__esModule", { value: true });exports.default =
+
+
+
+	function () {
+	  $("document").ready(function () {
+	    $(".tab-slider--body").hide();
+	    $(".tab-slider--body:first").show();
+	  });
+
+	  $(".tab-slider--nav li").click(function () {
+	    $(".tab-slider--body").hide();
+	    var activeTab = $(this).attr("rel");
+	    $("#" + activeTab).fadeIn();
+	    if ($(this).attr("rel") == "tab2") {
+	      $('.tab-slider--tabs').addClass('slide');
+	    } else {
+	      $('.tab-slider--tabs').removeClass('slide');
+	    }
+	    $(".tab-slider--nav li").removeClass("active");
+	    $(this).addClass("active");
 	  });
 	};
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))

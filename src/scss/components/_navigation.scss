@@ -19,6 +19,11 @@ Navigation
   @include grid-media($small-screen) {
     width: 100%;
   }
+
+  .back-button {
+    float: right;
+    margin-top: rem(13px);
+  }
 }
 
 .navbar-header__title {
@@ -82,6 +87,7 @@ Navigation
     border: none;
     padding-left: 0;
     padding-right: 0;
+    margin-left: rem(15px);
 
     &:hover,
     &:focus {
@@ -130,6 +136,15 @@ Navigation
 .dropdown-toggle {
   border-bottom: 1px solid $color-black;
   box-shadow: 0 1px 0 $color-dark-gray;
+}
+
+.navbar-offcanvas {
+  padding-left: 0;
+  padding-right: 0;
+
+  .close-icon {
+    padding-right: rem(15px);
+  }
 }
 
 .close-icon {

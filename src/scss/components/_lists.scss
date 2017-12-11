@@ -72,12 +72,31 @@ ul li {
       border-bottom: 1px solid $color-orange;
       // transition: all .4s ease;
 
+      > a {
+        display: inline-block;
+      }
+
       &:last-child {
         border-bottom: none;
+      }
+
+      .button-delete {
+        opacity: 0;
+        visibility: hidden;
+        transition: .4s all $cubic-transition;
+      }
+
+      &:hover,
+      &:focus {
+        .button-delete {
+          opacity: 1;
+          visibility: visible;
+        }
       }
     }
 
     .list__img {
+      position: relative;
       width: 100px;
       height: 80px;
       border-radius: 4px;

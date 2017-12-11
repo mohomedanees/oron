@@ -1,6 +1,10 @@
 /* -----------------
 Forms
 ----------------- */
+form {
+  display: block;
+}
+
 input,
 textarea,
 select {
@@ -14,4 +18,8 @@ select {
   @include placeholder {
     color: $color-primary !important;
   }
+}
+
+textarea {
+  resize: none;
 }
