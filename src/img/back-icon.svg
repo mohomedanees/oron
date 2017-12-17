@@ -4,9 +4,7 @@
     <title></title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="material" font-size="20" font-weight="normal">
-        <text id="" fill="#FFA300">
-            <tspan x="-2" y="13"></tspan>
-        </text>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="" fill="#FFA300" points="15.5 4.18 15.5 5.82 3.7 5.82 6.68 8.82 5.5 10 0.5 5 5.5 0 6.68 1.18 3.7 4.18"></polygon>
     </g>
 </svg>
