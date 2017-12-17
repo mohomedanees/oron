@@ -4,8 +4,10 @@
 
 export default function() {
   $(function () {
-    $('.datepicker').datetimepicker({
-      format: 'DD/MM/YYYY'
-    });
+  	if($('.datepicker').length){
+	    $('.datepicker').datetimepicker({
+	      format: 'DD/MM/YYYY'
+	    });
+    }
   });
 }

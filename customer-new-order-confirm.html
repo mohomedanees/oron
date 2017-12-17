@@ -22,6 +22,9 @@
   <!-- Bootstrap -->
   <link rel="stylesheet" href="src/css/bootstrap.min.css">
 
+  <!-- Bootstrap Date Picker -->
+  <link rel="stylesheet" href="src/css/bootstrap-datetimepicker.min.css">
+
 	<!-- Main Styles -->
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -43,8 +46,13 @@
             </span>
           </button>
           
-          <h1 class="navbar-header__title">Home</h1>
+          <h1 class="navbar-header__title">S & R Retailers</h1>
+
+          <a href="#" class="back-button">
+            <span class="icon icon-back--black"></span>
+          </a>
         </div>
+        
         <div class="navbar-offcanvas navbar-offcanvas-touch" id="js-bootstrap-offcanvas">
           <a href="#" class="close-icon"><img src="assets/img/close-icon.svg" alt=""></a>
           <ul class="list-unstyled nav navbar-nav">
@@ -52,7 +60,9 @@
               <div class="prof__img" style="background: url('assets/img/prof-icon.jpg') center center no-repeat;"></div>
               <h1 class="prof__name">MKS Distributors</h1>
             </li>
-            <li><a href="#"><span class="icon icon-settings"></span> Profile</a></li>
+            <li>
+              <a href="#"><span class="icon icon-settings"></span> Profile</a>
+            </li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle"><span class="icon icon-buy"></span> Buying <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
@@ -109,6 +119,155 @@
 	<!-- ================== End Header =================== -->
 
 
+  <!-- ==================== Content ===================== -->
+  <div class="container">
+    <div class="wrapper wrapper--common">
+      <ul class="list-unstyled list--orders-steps">
+        <li>
+          <a href="#">1</a>
+          <span>Select</span>
+        </li>
+        <li>
+          <a href="#">2</a>
+          <span>Review</span>
+        </li>
+        <li class="selected">
+          <a href="#">3</a>
+          <span>Confirm</span>
+        </li>
+      </ul>
+
+      <ul class="list-unstyled list list--orders list--reviews">
+        <li class="col-xs-12">
+          <div class="list__img" style="background: url('assets/img/bk-logo.png') center center no-repeat;">
+          </div>
+
+          <div class="list__content">
+            <div class="lc__title">Product Name</div>
+
+            <div class="controllers">
+              <form action="">
+                <input type="text" name="quantity" class="quantity" value="1" disabled="disabled">
+              </form>
+
+              <div class="lc__text">$25.50</div>
+            </div>
+          </div>
+        </li>
+
+        <li class="col-xs-12">
+          <div class="list__img" style="background: url('assets/img/lg-logo.png') center center no-repeat;">
+          </div>
+
+          <div class="list__content">
+            <div class="lc__title">Product Name</div>
+
+            <div class="controllers">
+              <form action="">
+                <input type="text" name="quantity" class="quantity" value="1" disabled="disabled">
+              </form>
+
+              <div class="lc__text">$25.50</div>
+            </div>
+          </div>
+        </li>
+
+        <li class="col-xs-12">
+          <div class="list__img" style="background: url('assets/img/bk-logo.png') center center no-repeat;">
+          </div>
+
+          <div class="list__content">
+            <div class="lc__title">Product Name</div>
+
+            <div class="controllers">
+              <form action="">
+                <input type="text" name="quantity" class="quantity" value="1" disabled="disabled">
+              </form>
+
+              <div class="lc__text">$25.50</div>
+            </div>
+          </div>
+        </li>
+
+        <li class="col-xs-12">
+          <div class="list__img" style="background: url('assets/img/android-logo.png') center center no-repeat;">
+          </div>
+
+          <div class="list__content">
+            <div class="lc__title">Product Name</div>
+
+            <div class="controllers">
+              <form action="">
+                <input type="text" name="quantity" class="quantity" value="1" disabled="disabled">
+              </form>
+
+              <div class="lc__text">$25.50</div>
+            </div>
+          </div>
+        </li>
+
+        <li class="col-xs-12">
+          <div class="list__img" style="background: url('assets/img/bk-logo.png') center center no-repeat;">
+          </div>
+
+          <div class="list__content">
+            <div class="lc__title">Product Name</div>
+
+            <div class="controllers">
+              <form action="">
+                <input type="text" name="quantity" class="quantity" value="1" disabled="disabled">
+              </form>
+
+              <div class="lc__text">$25.50</div>
+            </div>
+          </div>
+        </li>
+
+        <li class="col-xs-12 no-margin">
+          <div class="list__img" style="background: url('assets/img/android-logo.png') center center no-repeat;">
+          </div>
+
+          <div class="list__content">
+            <div class="lc__title">Product Name</div>
+
+            <div class="controllers">
+              <form action="">
+                <input type="text" name="quantity" class="quantity" value="1" disabled="disabled">
+              </form>
+
+              <div class="lc__text">$25.50</div>
+            </div>
+          </div>
+        </li>
+
+        <li class="col-xs-12 total-amount">
+          <div class="controllers">
+            <div class="lc__text lc__text--total">Total</div>
+
+            <div class="lc__text">$25.50</div>
+          </div>
+        </li>
+      </ul>
+
+      <form>
+        <div class="form-group">
+          <textarea class="form-control" rows="4" id="comment" placeholder="Message"></textarea>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- ================== End Content =================== -->
+
+
+  <!-- ========-===== Round Button Wrapper =====-======== -->
+  <div class="round-button__wrapper">
+    <div class="btn__wrapper">
+      <a href="#" class="button--round b-btn save-button"></a>
+      Send
+    </div>
+  </div>
+
+
   <!-- ============ Main Footer Menu Mobile ============ -->
   <div class="mob-menu">
     <div class="col-xs-3 mob-menu__column">
@@ -119,8 +278,8 @@
     </div>
     <div class="col-xs-3 mob-menu__column">
       <a href="#">
-        <span class="icon icon-sales"></span>
-        Sales
+        <span class="icon icon-orders"></span>
+        Orders
       </a>
     </div>
     <div class="col-xs-3 mob-menu__column">
@@ -139,18 +298,6 @@
   <!-- ========== End Main Footer Menu Mobile ========== -->
 
 
-	<!-- ================== Main Wrapper ================= -->
-	<div class="container full-height">
-    <div class="content-wrapper">
-      <h2 class="hmw-title">Welcome to Oron</h2>
-      <h3 class="hmw-subtitle">MKS Distributors</h3>
-    </div>
-
-    <img src="assets/img/ad-img-1.png" alt="">
-  </div>
-	<!-- ================= End Main Wrapper ================ -->
-
-
 	<!-- ======================== JS ========================= -->
 
 	<!-- FOR IE9 below -->
@@ -161,8 +308,14 @@
 	<!-- jQuery -->
 	<script src="src/js/vendor/jquery.js"></script>
 
+  <!-- Moment -->
+  <script src="src/js/vendor/moment.min.js"></script>
+
   <!-- Bootstrap -->
   <script src="src/js/vendor/bootstrap.min.js"></script>
+
+  <!-- Bootstrap Date Picker -->
+  <script src="src/js/vendor/bootstrap-datetimepicker.min.js"></script>
 
   <!-- Off Canvas Menu -->
   <script src="src/js/vendor/bootstrap.offcanvas.min.js"></script>

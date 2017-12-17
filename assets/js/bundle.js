@@ -46,8 +46,10 @@
 
 	'use strict';var _navigation = __webpack_require__(4);var _navigation2 = _interopRequireDefault(_navigation);
 	var _gridToggle = __webpack_require__(3);var _gridToggle2 = _interopRequireDefault(_gridToggle);
-	var _tab = __webpack_require__(5);var _tab2 = _interopRequireDefault(_tab);
-	var _datePicker = __webpack_require__(2);var _datePicker2 = _interopRequireDefault(_datePicker);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+	var _tab = __webpack_require__(7);var _tab2 = _interopRequireDefault(_tab);
+	var _datePicker = __webpack_require__(2);var _datePicker2 = _interopRequireDefault(_datePicker);
+	var _swipe = __webpack_require__(6);var _swipe2 = _interopRequireDefault(_swipe);
+	var _numberIncrement = __webpack_require__(5);var _numberIncrement2 = _interopRequireDefault(_numberIncrement);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 
 	function ready(fn) {
 	  if (document.readyState === 'loading') {
@@ -62,6 +64,8 @@
 	  (0, _gridToggle2.default)();
 	  (0, _tab2.default)();
 	  (0, _datePicker2.default)();
+	  (0, _swipe2.default)();
+	  (0, _numberIncrement2.default)();
 	}
 
 	ready(init);
@@ -82,9 +86,11 @@
 
 	function () {
 	  $(function () {
-	    $('.datepicker').datetimepicker({
-	      format: 'DD/MM/YYYY' });
+	    if ($('.datepicker').length) {
+	      $('.datepicker').datetimepicker({
+	        format: 'DD/MM/YYYY' });
 
+	    }
 	  });
 	};
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
@@ -141,6 +147,70 @@
 
 /***/ }),
 /* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function($) {"use strict";Object.defineProperty(exports, "__esModule", { value: true });exports.default =
+
+
+
+	function () {
+	  $(".quantity-control").on("click", function () {
+
+	    var $button = $(this);
+	    var oldValue = $button.parent().parent().find("input.quantity").val();
+
+	    console.log(oldValue);
+
+	    if ($button.hasClass('increase')) {
+	      var newVal = parseFloat(oldValue) + 1;
+
+	      if (oldValue > 9) {
+	        return false;
+	      }
+	    } else {
+	      if (oldValue > 1) {
+	        var newVal = parseFloat(oldValue) - 1;
+	      } else {
+	        newVal = 1;
+	      }
+	    }
+
+	    $button.parent().parent().find("input.quantity").val(newVal);
+	  });
+	};
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function($) {'use strict';Object.defineProperty(exports, "__esModule", { value: true });exports.default =
+
+
+
+	function () {
+	  var swipeElement = $('.swiper');
+	  var screenWidth = $(window).width();
+
+	  if (screenWidth <= 768) {
+	    $(swipeElement).each(function () {
+	      $(".swiper").swipe({
+	        swipeLeft: function swipeLeft(event, direction, distance, duration, fingerCount) {
+	          $(this).addClass('swipe-active');
+	        },
+
+	        swipeRight: function swipeRight(event, direction, distance, duration, fingerCount) {
+	          $(this).removeClass('swipe-active');
+	        },
+	        threshold: 0 });
+
+	    });
+	  }
+	};
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+
+/***/ }),
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function($) {"use strict";Object.defineProperty(exports, "__esModule", { value: true });exports.default =

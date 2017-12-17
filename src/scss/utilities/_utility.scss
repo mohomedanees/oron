@@ -50,6 +50,10 @@
 //WRAPPER
 .wrapper {
   padding: rem(82.5px 0 65px);
+
+  &--common {
+    padding: rem(0 0 65px);
+  }
 }
 
 //PADDING DISABLE
@@ -70,4 +74,8 @@
   max-width: 300px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.no-border {
+  border-bottom: none;
 }

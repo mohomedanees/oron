@@ -91,7 +91,8 @@ input {
   border-radius: 4px;
   position: absolute;
   right: 0;
-  bottom: 0;
+  top: 50%;
+  transform: translateY(-50%);
   padding: rem(0 4px);
 
   &:hover,
@@ -131,11 +132,19 @@ input {
   bottom: 56px;
   right: 0;
   padding: rem(15px);
+  z-index: 1000;
+}
+
+.btn__wrapper {
+  @include rem(font-size, $xsmall-font-size);
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 }
 
 .button--round {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   background: $color-orange;
   color: $color-primary;
   transition: .4s all $cubic-transition;
@@ -162,8 +171,8 @@ input {
 }
 
 .b-btn {
-  background-size: 18px !important;
-  margin: rem(10px 0);
+  background-size: 15px !important;
+  margin: rem(10px 0 0);
 }
 
 .save-button {
@@ -171,6 +180,15 @@ input {
   &:hover,
   &:focus {
     background: url('../img/save-icon--orange.svg') $color-primary center center no-repeat;
+  }
+}
+
+.print-button {
+  background: url('../img/print-icon--black.svg') $color-orange center center no-repeat;
+  background-size: 18px !important;
+  &:hover,
+  &:focus {
+    background: url('../img/print-icon.svg') $color-primary center center no-repeat;
   }
 }
 

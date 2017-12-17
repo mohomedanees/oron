@@ -7,7 +7,7 @@
 <head>
 	<meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
 
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 	<link rel="shortcut icon" href="favicon.ico">
@@ -47,6 +47,10 @@
           </button>
           
           <h1 class="navbar-header__title">View Customer Requests</h1>
+
+          <a href="#" class="back-button">
+            <span class="icon icon-back--black"></span>
+          </a>
         </div>
         
         <div class="navbar-offcanvas navbar-offcanvas-touch" id="js-bootstrap-offcanvas">
@@ -117,28 +121,38 @@
 
   <!-- ==================== Content ===================== -->
   <div class="container">
-    <div class="mprof-wrapper">
-      <div class="mprof-img" style="background: url('assets/img/ad-img-1.png') center center no-repeat;"></div>
+    <div class="wrapper wrapper--common">
+      <div class="mprof-wrapper">
+        <div class="mprof-img" style="background: url('assets/img/ad-img-1.png') center center no-repeat;"></div>
 
-      <div class="mprof-content">
-        <h1 class="mprof__title">John Doe</h1>
-        <span class="mprof__text">Customer: 1001</span>
-        <span class="mprof__text">West Beach SA 5024</span>
+        <div class="mprof-content">
+          <h1 class="mprof__title">John Doe</h1>
+          <span class="mprof__text">Customer: 1001</span>
+          <span class="mprof__text">West Beach SA 5024</span>
+        </div>
       </div>
+
+      <form>
+        <div class="form-group">
+          <textarea class="form-control" rows="5" id="comment" placeholder="Notes"></textarea>
+        </div>
+      </form>
     </div>
-
-    <form>
-      <div class="form-group">
-        <textarea class="form-control" rows="5" id="comment" placeholder="Notes"></textarea>
-      </div>
-    </form>
   </div>
   <!-- ================== End Content =================== -->
 
+
   <!-- ========-===== Round Button Wrapper =====-======== -->
   <div class="round-button__wrapper">
-    <a href="#" class="button--round b-btn save-button"></a>
-    <a href="#" class="button--round b-btn cancel-button"></a>
+    <div class="btn__wrapper">
+      <a href="#" class="button--round b-btn save-button"></a>
+      Accept
+    </div>
+
+    <div class="btn__wrapper">
+      <a href="#" class="button--round b-btn cancel-button"></a>
+      Reject
+    </div>
   </div>
 
 

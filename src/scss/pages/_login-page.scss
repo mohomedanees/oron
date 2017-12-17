@@ -31,3 +31,10 @@ Login
   margin-top: rem(15px);
   @include rem(font-size, $xsmall-font-size);
 }
+
+.fp-link {
+  display: block;
+  text-align: center;
+  margin-top: rem(10px);
+  @include rem(font-size, $small-font-size);
+}

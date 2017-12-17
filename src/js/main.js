@@ -2,6 +2,8 @@ import navigation from './modules/navigation.js';
 import gridToggle from './modules/gridToggle.js';
 import tab from './modules/tab.js';
 import datePicker from './modules/datePicker.js';
+import swipe from './modules/swipe.js';
+import numberIncrement from './modules/numberIncrement.js';
 
 function ready(fn) {
   if (document.readyState === 'loading') {
@@ -16,6 +18,8 @@ function init() {
   gridToggle();
   tab();
   datePicker();
+  swipe();
+  numberIncrement();
 }
 
 ready(init);

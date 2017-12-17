@@ -59,6 +59,8 @@ ul li {
   > div {
     width: 100%;
     padding: rem(15px 0 0);
+    display: flex;
+    flex-flow: wrap;
 
     > a {
       display: flex;
@@ -72,22 +74,32 @@ ul li {
       border-bottom: 1px solid $color-orange;
       // transition: all .4s ease;
 
-      > a {
-        display: inline-block;
-      }
-
       &:last-child {
         border-bottom: none;
       }
 
+      > a {
+        display: inline-block;
+      }
+
       .button-delete {
+        margin-top: rem(-7px);
         opacity: 0;
         visibility: hidden;
         transition: .4s all $cubic-transition;
       }
 
-      &:hover,
-      &:focus {
+      @include grid-media($smaller-screen) {
+        &:hover,
+        &:focus {
+          .button-delete {
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+      }
+
+      &.swipe-active {
         .button-delete {
           opacity: 1;
           visibility: visible;
@@ -97,28 +109,188 @@ ul li {
 
     .list__img {
       position: relative;
-      width: 100px;
-      height: 80px;
+      width: 60px;
+      height: 60px;
       border-radius: 4px;
       border: 2px solid $color-lighter-gray;
       float: left;
       margin-right: rem(15px);
       background-size: cover !important;
+
+      @include grid-media($small-screen) {
+        width: 100px;
+        height: 80px;
+      }
     }
 
     .list__content {
       float: left;
 
       .lc__title {
-        @include rem(font-size, $large-font-size);
+        @include rem(font-size, $base-font-size);
         font-weight: $font-medium;
         color: $color-primary;
       }
 
       .lc__text {
-        @include rem(font-size, $base-font-size);
+        @include rem(font-size, $small-font-size);
         font-weight: $font-thin;
         color: $color-lighter-gray;
+      }
+    }
+
+    &.list--csdetails {
+      a,
+      .list__content {
+        float: left;
+        width: 100%;
+      }
+
+      .lc__title {
+        float: left;
+      }
+
+      .lc__text {
+        float: right;
+        color: $color-primary;
+        @include rem(font-size, $base-font-size);
+        font-weight: $font-medium;
+      }
+    }
+
+    &.list--orders {
+      > li {
+        &:nth-last-child(2) {
+          border-bottom: 2px solid $color-orange;
+        }
+      }
+      .controllers {
+        float: right;
+      }
+
+      .list__content {
+        width: 87%;
+        width: calc(100% - 40px);
+      }
+
+      .list__img {
+        width: 30px;
+        height: 30px;
+        border: 1px solid $color-lighter-gray;
+        margin-right: rem(10px);
+
+        @include grid-media($small-screen) {
+          width: 100px;
+          height: 80px;
+          border: 2px solid $color-lighter-gray;
+        }
+      }
+
+      .lc__title {
+        float: left;
+        @include rem(font-size, $small-font-size);
+      }
+
+      form {
+        float: left;
+
+        input,
+        button {
+          color: $color-primary;
+          min-height: 25px;
+          max-height: 25px;
+          max-width: 28px;
+          padding: rem(0 5px);
+        }
+      }
+
+      .qcontrol-wrapper {
+        float: left;
+        margin-right: rem(15px);
+
+        .quantity-control {
+          float: left;
+          border: 1px solid $color-primary;
+          text-align: center;
+          padding: rem(0 7px);
+          @include rem(font-size, $small-font-size);
+          cursor: pointer;
+
+          &:before {
+            font-family: FontAwesome;
+            display: inline-block;
+            vertical-align: middle;
+          }
+
+          &.increase {
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+
+            &:before {
+              content: "\f067";
+            }
+          }
+
+          &.decrease {
+            margin-left: -1px;
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+
+            &:before {
+              content: "\f068";
+            }
+          }
+        }
+      }
+
+      .quantity {
+        float: left;
+        border: 1px solid $color-primary;
+        border-radius: 4px;
+        appearance: none;
+        @include rem(font-size, $small-font-size);
+        text-align: center;
+        margin-right: rem(15px);
+      }
+
+      .lc__text {
+        float: right;
+        color: $color-primary;
+        @include rem(font-size, $small-font-size);
+        font-weight: $font-medium;
+
+        &--total {
+          float: left;
+        }
+      }
+
+      .total-amount {
+        .controllers {
+          min-width: 150px;
+
+          * {
+            @include rem(font-size, $large-font-size);
+            font-weight: $font-bold;
+          }
+        }
+      }
+    }
+
+    &.list--reviews {
+      > li {
+        .controllers {
+          .lc__text {
+            margin-left: rem(15px);
+          }
+        }
+      }
+    }
+
+    &.list--dd {
+      > li {
+        &:nth-last-child(2) {
+          border-bottom: 1px solid $color-orange;
+        }
       }
     }
   }
@@ -128,11 +300,12 @@ ul li {
 .list__grid {
   > li {
     border: none;
-    width: 50%;
-    padding: rem(0 15px);
+    width: 33.33%;
+    padding: rem(0 10px);
 
-    @include grid-media($small-screen) {
+    @include grid-media($smaller-screen) {
       width: 25%;
+      padding: rem(0 15px);
     }
 
     @include grid-media($medium-screen) {
@@ -146,11 +319,98 @@ ul li {
     &:after {
       display: none;
     }
+
+    .button-delete {
+      opacity: 0;
+      visibility: hidden;
+      transition: .4s all $cubic-transition;
+    }
+
+    &:hover,
+    &:focus {
+      .button-delete {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
   }
 
   .list__img {
     margin: rem(0 0 5px);
     width: 100%;
-    height: 100px;
+    height: 60px;
+    background-size: contain !important;
+
+    @include grid-media($smaller-screen) {
+      height: 80px;
+    }
+
+    @include grid-media($small-screen) {
+      width: 100%;
+      height: 100px;
+    }
+  }
+}
+
+// LIST ORDERS STEPS
+.list--orders-steps {
+  margin: 0 auto;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    width: 80%;
+    width: calc(100% - 40px);
+    height: 1px;
+    z-index: -1;
+    background: $color-orange;
+    transform: translateX(-50%);
+  }
+
+  li {
+    float: left;
+    margin: rem(0 15px);
+    @include rem(font-size, $em-base);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    &:hover,
+    &:focus,
+    &.selected {
+
+      > a {
+        background: $color-primary;
+        color: $color-orange;
+      }
+
+      > span {
+        opacity: 1;
+      }
+    }
+
+    > span {
+      transition: .4s all $cubic-transition;
+      opacity: 0;
+    }
+
+    > a {
+      color: $color-primary;
+      text-align: center;
+      display: block;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: $color-orange;
+      border-radius: 100%;
+      border: 1px solid $color-primary;
+      margin-bottom: rem(3px);
+      @include rem(font-size, $small-font-size);
+    }
   }
 }
