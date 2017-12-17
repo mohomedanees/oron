@@ -80,6 +80,7 @@ ul li {
 
       > a {
         display: inline-block;
+        width: 100%;
       }
 
       .button-delete {
@@ -339,7 +340,7 @@ ul li {
     margin: rem(0 0 5px);
     width: 100%;
     height: 60px;
-    background-size: contain !important;
+    background-size: cover !important;
 
     @include grid-media($smaller-screen) {
       height: 80px;
