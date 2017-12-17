@@ -80,7 +80,6 @@ ul li {
 
       > a {
         display: inline-block;
-        width: 100%;
       }
 
       .button-delete {
@@ -90,7 +89,7 @@ ul li {
         transition: .4s all $cubic-transition;
       }
 
-      @include grid-media($smaller-screen) {
+      @include grid-media($small-screen) {
         &:hover,
         &:focus {
           .button-delete {
@@ -317,22 +316,23 @@ ul li {
       width: 16.6667%;
     }
 
+    > a {
+      width: 100%;
+    }
+
     &:after {
       display: none;
     }
 
     .button-delete {
+      top: 0;
+      margin-top: 0;
+      transform: none;
+      right: 15px;
       opacity: 0;
+      width: auto;
       visibility: hidden;
       transition: .4s all $cubic-transition;
-    }
-
-    &:hover,
-    &:focus {
-      .button-delete {
-        opacity: 1;
-        visibility: visible;
-      }
     }
   }
 

@@ -195,6 +195,12 @@
 	  if (screenWidth <= 768) {
 	    $(swipeElement).each(function () {
 	      $(".swiper").swipe({
+	        tap: function tap(event, target) {
+	          if ($('.list').hasClass('list__grid')) {
+	            $(this).toggleClass('swipe-active');
+	          }
+	        },
+
 	        swipeLeft: function swipeLeft(event, direction, distance, duration, fingerCount) {
 	          $(this).addClass('swipe-active');
 	        },
@@ -202,7 +208,8 @@
 	        swipeRight: function swipeRight(event, direction, distance, duration, fingerCount) {
 	          $(this).removeClass('swipe-active');
 	        },
-	        threshold: 0 });
+
+	        threshold: 50 });
 
 	    });
 	  }

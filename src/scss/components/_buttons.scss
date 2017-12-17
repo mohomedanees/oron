@@ -27,7 +27,7 @@ input {
 }
 
 .button__merge {
-  max-width: 300px;
+  max-width: 310px;
   margin: 0 auto;
   display: block;
   position: relative;
@@ -94,6 +94,7 @@ input {
   top: 50%;
   transform: translateY(-50%);
   padding: rem(0 4px);
+  width: auto;
 
   &:hover,
   &:focus {
