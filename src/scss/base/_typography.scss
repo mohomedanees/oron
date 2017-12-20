@@ -1,0 +1,42 @@
+/* -----------------
+Typography
+----------------- */
+
+// DEFAULTS - Overrides to basic text styles
+html {
+  color: $color-primary;
+  @include rem-baseline;
+}
+
+body {
+  font-size: $base-font-size;
+  font-family: $font-opsans;
+  font-weight: $font-normal;
+}
+
+p {
+  line-height: $base-line-height;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both;
+  font-family: $font-opsans;
+  font-weight: $font-bold;
+  line-height: $heading-line-height;
+  margin-bottom: .5em;
+  margin-top: 1.5em;
+  color: $color-primary;
+}
+
+.title-small {
+  @include rem(font-size, $large-font-size);
+  display: block;
+  text-align: center;
+}

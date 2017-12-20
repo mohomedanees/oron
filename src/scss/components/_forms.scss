@@ -1,0 +1,25 @@
+/* -----------------
+Forms
+----------------- */
+form {
+  display: block;
+}
+
+input,
+textarea,
+select {
+  max-width: 310px;
+  margin: 0 auto;
+}
+
+.form-control {
+  color: $color-primary;
+
+  @include placeholder {
+    color: $color-primary !important;
+  }
+}
+
+textarea {
+  resize: none;
+}

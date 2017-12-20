@@ -1,0 +1,18 @@
+/* -----------------
+Home
+----------------- */
+.content-wrapper {
+  text-align: center;
+  margin-bottom: rem(30px);
+
+  .hmw-title {
+    margin: 0;
+    @include rem(font-size, 24px);
+  }
+
+  .hmw-subtitle {
+    margin: rem(8px 0 0);
+    @include rem(font-size, $large-font-size);
+    color: $color-orange;
+  }
+}

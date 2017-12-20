@@ -1,0 +1,13 @@
+/* -----------------
+Links
+----------------- */
+a {
+  transition: all .3s $cubic-transition;
+
+  &,
+  &:hover,
+  &:focus {
+    color: $color-orange;
+    text-decoration: none;
+  }
+}

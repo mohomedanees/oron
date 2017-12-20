@@ -1,0 +1,62 @@
+/* --------------------
+Common Profile Section
+-------------------- */
+.mprof-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: rem(20px);
+
+  &--dd {
+    .mprof__title {
+      color: $color-orange;
+    }
+
+    padding: rem(15px);
+    margin-top: rem(-15px);
+    margin-bottom: 0;
+    background: $color-primary;
+    color: $color-orange;
+  }
+}
+
+.mprof-img {
+  background: rgb(253, 169, 22);
+  background: linear-gradient(to bottom, rgba(253, 169, 22, 1) 0%, rgba(255, 229, 0, 1) 100%);
+  border: 1px solid $color-gray;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background-size: cover !important;
+  float: left;
+
+  &--default {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:before {
+      content: '';
+      width: 45px;
+      height: 45px;
+      background: url('../img/profile-icon--black.svg') center center no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+.mprof-content {
+  float: left;
+  margin-left: rem(15px);
+}
+
+.mprof__title {
+  @include rem(font-size, $h1-font-size);
+  font-weight: $font-medium;
+  margin: 0;
+}
+
+.mprof__text {
+  @include rem(font-size, $base-font-size);
+  font-weight: $font-thin;
+  display: block;
+}

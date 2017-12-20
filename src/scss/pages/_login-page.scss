@@ -1,0 +1,40 @@
+/* -----------------
+Login
+----------------- */
+.login__main-logo {
+  text-align: center;
+  margin: rem(15px 0 30px);
+  display: block;
+
+  img {
+    max-width: 88px;
+  }
+}
+
+.login__logo-name {
+  margin-top: rem(5px);
+  @include rem(font-size, 25px);
+}
+
+.login__text {
+  display: block;
+  text-align: center;
+  @include rem(font-size, $large-font-size);
+}
+
+.terms {
+  display: block;
+  max-width: 185px;
+  margin: 0 auto;
+  text-align: center;
+  color: $color-gray;
+  margin-top: rem(15px);
+  @include rem(font-size, $xsmall-font-size);
+}
+
+.fp-link {
+  display: block;
+  text-align: center;
+  margin-top: rem(10px);
+  @include rem(font-size, $small-font-size);
+}

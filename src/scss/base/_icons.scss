@@ -1,0 +1,240 @@
+/* -----------------
+Icons
+----------------- */
+.icon {
+  &:before {
+    content: '';
+    position: relative;
+    top: 3px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.icon-settings {
+  &:before {
+    background: url('../img/settings-icon.svg') center center no-repeat;
+    background-size: contain;
+  }
+
+  &--black {
+    &:before {
+      background: url('../img/settings-icon--black.svg') center center no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+.icon-back {
+  &:before {
+    top: 2px;
+    width: 18px;
+    height: 17px;
+    background: url('../img/back-icon.svg') center center no-repeat;
+    background-size: contain;
+  }
+
+  &--black {
+    &:before {
+      top: 2px;
+      width: 18px;
+      height: 17px;
+      background: url('../img/back-icon--black.svg') center center no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+.icon-buy {
+  &:before {
+    background: url('../img/buying-icon.svg') center center no-repeat;
+    background-size: contain;
+  }
+
+  &--black {
+    &:before {
+      background: url('../img/buying-icon--black.svg') center center no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+.icon-profile {
+  &:before {
+    background: url('../img/profile-icon.svg') center center no-repeat;
+    background-size: contain;
+  }
+
+  &--black {
+    &:before {
+      background: url('../img/profile-icon--black.svg') center center no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+.icon-delete {
+  &:before {
+    background: url('../img/delete-icon.svg') center center no-repeat;
+    background-size: contain;
+  }
+
+  &--black {
+    &:before {
+      background: url('../img/delete-icon--black.svg') center center no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+.icon-suppliers {
+  &:before {
+    background: url('../img/suppliers-icon.svg') center center no-repeat;
+    background-size: contain;
+  }
+
+  &--black {
+    &:before {
+      background: url('../img/suppliers-icon--black.svg') center center no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+.icon-purchases {
+  &:before {
+    background: url('../img/purchases-icon.svg') center center no-repeat;
+    background-size: contain;
+  }
+
+  &--black {
+    &:before {
+      background: url('../img/purchases-icon--black.svg') center center no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+.icon-sales {
+  &:before {
+    background: url('../img/sales-icon.svg') center center no-repeat;
+    background-size: contain;
+  }
+
+  &--black {
+    &:before {
+      background: url('../img/sales-icon--black.svg') center center no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+.icon-orders {
+  &:before {
+    background: url('../img/order-icon.svg') center center no-repeat;
+    background-size: contain;
+  }
+
+  &--black {
+    &:before {
+      background: url('../img/order-icon--black.svg') center center no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+.icon-salesrep {
+  &:before {
+    background: url('../img/salesrep-icon.svg') center center no-repeat;
+    background-size: contain;
+  }
+
+  &--black {
+    &:before {
+      background: url('../img/salesrep-icon--black.svg') center center no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+.icon-customers {
+  &:before {
+    background: url('../img/customers-icon.svg') center center no-repeat;
+    background-size: contain;
+  }
+
+  &--black {
+    &:before {
+      background: url('../img/customers-icon--black.svg') center center no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+.icon-products {
+  &:before {
+    background: url('../img/products-icon.svg') center center no-repeat;
+    background-size: contain;
+  }
+
+  &--black {
+    &:before {
+      background: url('../img/products-icon--black.svg') center center no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+.icon-help {
+  &:before {
+    background: url('../img/help-icon.svg') center center no-repeat;
+    background-size: contain;
+  }
+
+  &--black {
+    &:before {
+      background: url('../img/help-icon--black.svg') center center no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+.icon-home {
+  &:before {
+    background: url('../img/home-icon.svg') center center no-repeat;
+    background-size: contain;
+  }
+
+  &--black {
+    &:before {
+      background: url('../img/home-icon--black.svg') center center no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+.icon-edit {
+  &:before {
+    background: url('../img/edit-icon.svg') center center no-repeat;
+    background-size: contain;
+  }
+
+  &--black {
+    &:before {
+      background: url('../img/edit-icon--black.svg') center center no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+.icon-arrow-right {
+  &:before {
+    background: url('../img/icon-arrow-right.png') center center no-repeat;
+    background: url('../img/icon-arrow-right.svg') center center no-repeat;
+    background-size: contain;
+    width: 7px;
+    height: 12px;
+  }
+}
+
