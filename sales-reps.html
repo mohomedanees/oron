@@ -64,8 +64,8 @@
               <a href="#"><span class="icon icon-settings"></span> Profile</a>
             </li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle"><span class="icon icon-buy"></span> Buying <span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
+              <a href="#"><span class="icon icon-buy"></span> Buying <span class="caret"></span></a>
+              <ul class="dropdown-menu shown" role="menu">
                 <li>
                   <a href="#">
                     <span class="icon icon-suppliers"></span> Suppliers
@@ -79,11 +79,11 @@
               </ul>
             </li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle">
+              <a href="#">
                 <span class="icon icon-sales"></span> Selling <span class="caret"></span>
               </a>
 
-              <ul class="dropdown-menu" role="menu">
+              <ul class="dropdown-menu shown" role="menu">
                 <li>
                   <a href="#">
                     <span class="icon icon-salesrep"></span> Sales Reps
@@ -130,14 +130,6 @@
           </button>
         </div>
       </div>
-
-      <div class="form-group">
-        <select class="form-control">
-          <option>Alpahabetic (A to Z)</option>
-          <option>Latest to Oldest</option>
-          <option>Price high to low</option>
-        </select>
-      </div>
     </form>
   </div>
   <!-- =============== End Search Header ================ -->
@@ -147,7 +139,7 @@
   <div class="container">
     <div class="wrapper">
       <ul class="list-unstyled list">
-        <li class="col-xs-12">
+        <li class="col-xs-12 swiper">
           <div class="list__img" style="background: url('assets/img/bk-logo.png') center center no-repeat;">
           </div>
 
@@ -156,9 +148,13 @@
               <div class="lc__title">S&R Retailers</div>
             </div>
           </a>
+
+          <a href="#" class="button-delete">
+            <span class="icon icon-bin--black"></span>
+          </a>
         </li>
 
-        <li class="col-xs-12">
+        <li class="col-xs-12 swiper">
           <div class="list__img" style="background: url('assets/img/lg-logo.png') center center no-repeat;">
           </div>
 
@@ -167,9 +163,13 @@
               <div class="lc__title">Lorum Ipsum</div>
             </div>
           </a>
+
+          <a href="#" class="button-delete">
+            <span class="icon icon-bin--black"></span>
+          </a>
         </li>
 
-        <li class="col-xs-12">
+        <li class="col-xs-12 swiper">
           <div class="list__img" style="background: url('assets/img/bk-logo.png') center center no-repeat;">
           </div>
 
@@ -178,9 +178,13 @@
               <div class="lc__title">Dolar</div>
             </div>
           </a>
+
+          <a href="#" class="button-delete">
+            <span class="icon icon-bin--black"></span>
+          </a>
         </li>
 
-        <li class="col-xs-12">
+        <li class="col-xs-12 swiper">
           <div class="list__img" style="background: url('assets/img/android-logo.png') center center no-repeat;">
           </div>
 
@@ -189,9 +193,13 @@
               <div class="lc__title">Sit Amet</div>
             </div>
           </a>
+
+          <a href="#" class="button-delete">
+            <span class="icon icon-bin--black"></span>
+          </a>
         </li>
 
-        <li class="col-xs-12">
+        <li class="col-xs-12 swiper">
           <div class="list__img" style="background: url('assets/img/bk-logo.png') center center no-repeat;">
           </div>
 
@@ -200,9 +208,13 @@
               <div class="lc__title">S&R Retailers</div>
             </div>
           </a>
+
+          <a href="#" class="button-delete">
+            <span class="icon icon-bin--black"></span>
+          </a>
         </li>
 
-        <li class="col-xs-12">
+        <li class="col-xs-12 swiper">
           <div class="list__img" style="background: url('assets/img/android-logo.png') center center no-repeat;">
           </div>
 
@@ -210,6 +222,10 @@
             <div class="list__content">
               <div class="lc__title">S&R Retailers</div>
             </div>
+          </a>
+
+          <a href="#" class="button-delete">
+            <span class="icon icon-bin--black"></span>
           </a>
         </li>
       </ul>
@@ -220,6 +236,7 @@
 
   <!-- ============ Main Footer Menu Mobile ============ -->
   <div class="mob-menu">
+    <a href="#" class="button--round add-button">+</a>
     <div class="col-xs-3 mob-menu__column">
       <a href="#">
         <span class="icon icon-products"></span>
@@ -269,6 +286,9 @@
 
   <!-- Off Canvas Menu -->
   <script src="src/js/vendor/bootstrap.offcanvas.min.js"></script>
+
+  <!-- Hammer  -->
+  <script src="src/js/vendor/jquery.touchSwipe.min.js"></script>
 
 	<!-- Main JS -->
 	<script src="assets/js/source.dev.js"></script>

@@ -6,6 +6,12 @@ input {
   outline: none;
 }
 
+.btn-holder {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 150px;
+}
+
 .btn-wrapper {
   text-align: center;
   @include grid-container;
@@ -32,10 +38,6 @@ input {
   display: block;
   position: relative;
   width: 100%;
-}
-
-.button--shadow {
-  box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
 }
 
 .button-orange {
@@ -79,13 +81,6 @@ input {
   }
 }
 
-.button-orange--outlined {
-  background: linear-gradient(to bottom, rgba(88, 88, 88, 1) 0%, rgba(0, 0, 0, 1) 100%);
-  color: $color-orange;
-  border-radius: 25px;
-  border: 1px solid $color-orange;
-}
-
 .button-delete {
   background: $color-orange;
   border-radius: 4px;
@@ -99,9 +94,9 @@ input {
   &:hover,
   &:focus {
     background: $color-primary;
-    .icon-delete--black {
+    .icon-bin--black {
       &:before {
-        background: url('../img/delete-icon.svg') center center no-repeat;
+        background: url('../img/bin-icon.svg') center center no-repeat;
       }
     }
   }
@@ -153,6 +148,7 @@ input {
   align-items: center;
   justify-content: center;
   border-radius: 100%;
+  border: none;
   @include rem(font-size, 28px);
   font-weight: $font-medium;
   box-shadow: 0 -1px 3px rgba(125, 122, 122, .5);
@@ -198,5 +194,41 @@ input {
   &:hover,
   &:focus {
     background: url('../img/cancel-icon.svg') $color-primary center center no-repeat;
+  }
+}
+
+.login-button {
+  background: url('../img/login_icon--black.svg') $color-orange center center no-repeat;
+  display: inline-block;
+  margin-right: 10px;
+  &:hover,
+  &:focus {
+    background: url('../img/login_icon.svg') $color-primary center center no-repeat;
+  }
+}
+
+.register-button {
+  background: linear-gradient(to bottom, rgba(88, 88, 88, 1) 0%, rgba(0, 0, 0, 1) 100%) no-repeat;
+  background-size: cover !important;
+  color: $color-orange;
+  border-radius: 25px;
+  border: 1px solid $color-orange;
+  display: inline-block;
+  &:before {
+    content: '';
+    display: block;
+    background: url('../img/register_icon.svg') center center no-repeat;
+    background-size: contain !important;
+    margin: 0 auto;
+    width: 18px;
+    height: 18px;
+  }
+  &:hover,
+  &:focus {
+    background: $color-orange;
+
+    &:before {
+      background: url('../img/register_icon--black.svg') center center no-repeat;
+    }
   }
 }

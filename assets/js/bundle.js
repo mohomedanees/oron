@@ -44,12 +44,13 @@
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	'use strict';var _navigation = __webpack_require__(4);var _navigation2 = _interopRequireDefault(_navigation);
-	var _gridToggle = __webpack_require__(3);var _gridToggle2 = _interopRequireDefault(_gridToggle);
-	var _tab = __webpack_require__(7);var _tab2 = _interopRequireDefault(_tab);
-	var _datePicker = __webpack_require__(2);var _datePicker2 = _interopRequireDefault(_datePicker);
-	var _swipe = __webpack_require__(6);var _swipe2 = _interopRequireDefault(_swipe);
-	var _numberIncrement = __webpack_require__(5);var _numberIncrement2 = _interopRequireDefault(_numberIncrement);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+	'use strict';var _navigation = __webpack_require__(5);var _navigation2 = _interopRequireDefault(_navigation);
+	var _gridToggle = __webpack_require__(4);var _gridToggle2 = _interopRequireDefault(_gridToggle);
+	var _tab = __webpack_require__(8);var _tab2 = _interopRequireDefault(_tab);
+	var _datePicker = __webpack_require__(3);var _datePicker2 = _interopRequireDefault(_datePicker);
+	var _swipe = __webpack_require__(7);var _swipe2 = _interopRequireDefault(_swipe);
+	var _numberIncrement = __webpack_require__(6);var _numberIncrement2 = _interopRequireDefault(_numberIncrement);
+	var _bodyPadding = __webpack_require__(2);var _bodyPadding2 = _interopRequireDefault(_bodyPadding);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 
 	function ready(fn) {
 	  if (document.readyState === 'loading') {
@@ -66,6 +67,7 @@
 	  (0, _datePicker2.default)();
 	  (0, _swipe2.default)();
 	  (0, _numberIncrement2.default)();
+	  (0, _bodyPadding2.default)();
 	}
 
 	ready(init);
@@ -85,6 +87,26 @@
 
 
 	function () {
+	  var body = $('body'),
+	  winWidth = $(window).width();
+
+	  if ($('.button--round')[0] && winWidth < 992) {
+	    body.addClass('add-padding');
+	  } else {
+	    body.removeClass('add-padding');
+	  }
+	};
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function($) {'use strict';Object.defineProperty(exports, "__esModule", { value: true });exports.default =
+
+
+
+	function () {
 	  $(function () {
 	    if ($('.datepicker').length) {
 	      $('.datepicker').datetimepicker({
@@ -96,7 +118,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 3 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function($) {'use strict';Object.defineProperty(exports, "__esModule", { value: true });exports.default =
@@ -124,7 +146,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function($) {'use strict';Object.defineProperty(exports, "__esModule", { value: true });exports.default =
@@ -146,7 +168,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function($) {"use strict";Object.defineProperty(exports, "__esModule", { value: true });exports.default =
@@ -158,8 +180,6 @@
 
 	    var $button = $(this);
 	    var oldValue = $button.parent().parent().find("input.quantity").val();
-
-	    console.log(oldValue);
 
 	    if ($button.hasClass('increase')) {
 	      var newVal = parseFloat(oldValue) + 1;
@@ -181,7 +201,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function($) {'use strict';Object.defineProperty(exports, "__esModule", { value: true });exports.default =
@@ -197,11 +217,13 @@
 	      $(".swiper").swipe({
 	        tap: function tap(event, target) {
 	          if ($('.list').hasClass('list__grid')) {
+	            $(".swiper").removeClass('swipe-active');
 	            $(this).toggleClass('swipe-active');
 	          }
 	        },
 
 	        swipeLeft: function swipeLeft(event, direction, distance, duration, fingerCount) {
+	          $(".swiper").removeClass('swipe-active');
 	          $(this).addClass('swipe-active');
 	        },
 
@@ -217,7 +239,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function($) {"use strict";Object.defineProperty(exports, "__esModule", { value: true });exports.default =

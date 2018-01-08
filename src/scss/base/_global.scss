@@ -17,6 +17,18 @@ body {
 body {
   margin: 0;
   padding: rem(65px 0);
+
+  @include grid-media($small-screen) {
+    padding: rem(65px 0);
+  }
+
+  &.add-padding {
+    padding: rem(65px 50px 65px 0);
+
+    @include grid-media($small-screen) {
+      padding: rem(65px 0);
+    }
+  }
 }
 
 * {

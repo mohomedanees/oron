@@ -4,6 +4,7 @@ import tab from './modules/tab.js';
 import datePicker from './modules/datePicker.js';
 import swipe from './modules/swipe.js';
 import numberIncrement from './modules/numberIncrement.js';
+import bodyPadding from './modules/bodyPadding.js';
 
 function ready(fn) {
   if (document.readyState === 'loading') {
@@ -20,6 +21,7 @@ function init() {
   datePicker();
   swipe();
   numberIncrement();
+  bodyPadding();
 }
 
 ready(init);

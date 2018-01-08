@@ -11,11 +11,13 @@ export default function() {
       $(".swiper").swipe({
         tap:function(event, target) {
           if($('.list').hasClass('list__grid')) {
+            $(".swiper").removeClass('swipe-active');
             $(this).toggleClass('swipe-active');
           }
         },
 
         swipeLeft:function(event, direction, distance, duration, fingerCount) {
+          $(".swiper").removeClass('swipe-active');
           $(this).addClass('swipe-active');
         },
 

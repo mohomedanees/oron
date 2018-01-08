@@ -88,6 +88,20 @@ Icons
   }
 }
 
+.icon-bin {
+  &:before {
+    background: url('../img/bin-icon.svg') center center no-repeat;
+    background-size: contain;
+  }
+
+  &--black {
+    &:before {
+      background: url('../img/bin-icon--black.svg') center center no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
 .icon-suppliers {
   &:before {
     background: url('../img/suppliers-icon.svg') center center no-repeat;

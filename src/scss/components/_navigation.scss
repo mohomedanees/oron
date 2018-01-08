@@ -72,6 +72,10 @@ Navigation
 
       &.dropdown {
         border: none;
+        > a {
+          border-bottom: 1px solid $color-black;
+          box-shadow: 0 1px 0 $color-dark-gray;
+        }
       }
 
       > a {

@@ -8,8 +8,6 @@ export default function() {
     var $button = $(this);
     var oldValue = $button.parent().parent().find("input.quantity").val();
 
-    console.log(oldValue);
-
     if ($button.hasClass('increase')) {
       var newVal = parseFloat(oldValue) + 1;
 
