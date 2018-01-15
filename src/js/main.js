@@ -3,7 +3,7 @@ import gridToggle from './modules/gridToggle.js';
 import tab from './modules/tab.js';
 import datePicker from './modules/datePicker.js';
 import swipe from './modules/swipe.js';
-import numberIncrement from './modules/numberIncrement.js';
+// import numberIncrement from './modules/numberIncrement.js';
 import bodyPadding from './modules/bodyPadding.js';
 
 function ready(fn) {
@@ -20,7 +20,7 @@ function init() {
   tab();
   datePicker();
   swipe();
-  numberIncrement();
+  // numberIncrement();
   bodyPadding();
 }
 

@@ -158,6 +158,21 @@ ul li {
       }
     }
 
+    .list--orders {
+      form {
+        float: left;
+
+        input,
+        button {
+          color: $color-primary;
+          min-height: 25px;
+          max-height: 25px;
+          max-width: 28px;
+          padding: rem(0 5px);
+        }
+      }
+    }
+
     &.list--orders {
       > li {
         &:nth-last-child(2) {
@@ -189,19 +204,6 @@ ul li {
       .lc__title {
         float: left;
         @include rem(font-size, $small-font-size);
-      }
-
-      form {
-        float: left;
-
-        input,
-        button {
-          color: $color-primary;
-          min-height: 25px;
-          max-height: 25px;
-          max-width: 28px;
-          padding: rem(0 5px);
-        }
       }
 
       .qcontrol-wrapper {
