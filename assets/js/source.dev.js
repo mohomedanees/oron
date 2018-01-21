@@ -46,10 +46,10 @@
 
 	'use strict';var _navigation = __webpack_require__(5);var _navigation2 = _interopRequireDefault(_navigation);
 	var _gridToggle = __webpack_require__(4);var _gridToggle2 = _interopRequireDefault(_gridToggle);
-	var _tab = __webpack_require__(7);var _tab2 = _interopRequireDefault(_tab);
+	var _tab = __webpack_require__(8);var _tab2 = _interopRequireDefault(_tab);
 	var _datePicker = __webpack_require__(3);var _datePicker2 = _interopRequireDefault(_datePicker);
-	var _swipe = __webpack_require__(6);var _swipe2 = _interopRequireDefault(_swipe);
-
+	var _swipe = __webpack_require__(7);var _swipe2 = _interopRequireDefault(_swipe);
+	var _numberIncrement = __webpack_require__(6);var _numberIncrement2 = _interopRequireDefault(_numberIncrement);
 	var _bodyPadding = __webpack_require__(2);var _bodyPadding2 = _interopRequireDefault(_bodyPadding);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 
 	function ready(fn) {
@@ -58,7 +58,7 @@
 	  } else {
 	    fn();
 	  }
-	} // import numberIncrement from './modules/numberIncrement.js';
+	}
 
 	function init() {
 	  (0, _navigation2.default)();
@@ -66,7 +66,7 @@
 	  (0, _tab2.default)();
 	  (0, _datePicker2.default)();
 	  (0, _swipe2.default)();
-	  // numberIncrement();
+	  (0, _numberIncrement2.default)();
 	  (0, _bodyPadding2.default)();
 	}
 
@@ -171,6 +171,39 @@
 /* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
+	/* WEBPACK VAR INJECTION */(function($) {"use strict";Object.defineProperty(exports, "__esModule", { value: true });exports.default =
+
+
+
+	function () {
+	  $(".quantity-control").on("click", function () {
+
+	    var $button = $(this);
+	    var oldValue = $button.parent().parent().find("input.quantity").val();
+
+	    if ($button.hasClass('increase')) {
+	      var newVal = parseFloat(oldValue) + 1;
+
+	      if (oldValue > 9) {
+	        return false;
+	      }
+	    } else {
+	      if (oldValue > 1) {
+	        var newVal = parseFloat(oldValue) - 1;
+	      } else {
+	        newVal = 1;
+	      }
+	    }
+
+	    $button.parent().parent().find("input.quantity").val(newVal);
+	  });
+	};
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
 	/* WEBPACK VAR INJECTION */(function($) {'use strict';Object.defineProperty(exports, "__esModule", { value: true });exports.default =
 
 
@@ -206,7 +239,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function($) {"use strict";Object.defineProperty(exports, "__esModule", { value: true });exports.default =
