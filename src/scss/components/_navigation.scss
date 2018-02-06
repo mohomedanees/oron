@@ -75,6 +75,10 @@ Navigation
         > a {
           border-bottom: 1px solid $color-black;
           box-shadow: 0 1px 0 $color-dark-gray;
+
+          .caret {
+            display: none;
+          }
         }
       }
 
@@ -173,8 +177,8 @@ Navigation
   padding-top: rem(15px);
 
   .prof__img {
-    height: 80px;
-    width: 80px;
+    height: 60px;
+    width: 60px;
     margin: 0 auto;
     border-radius: 100%;
     border: 2px solid $color-orange;
@@ -187,9 +191,9 @@ Navigation
   }
 
   .prof__name {
-    @include rem(font-size, $large-font-size);
+    @include rem(font-size, $base-font-size);
     color: $color-orange;
-    margin: rem(25px 0);
+    margin: rem(15px 0);
   }
 }
 
