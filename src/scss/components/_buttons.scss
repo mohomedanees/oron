@@ -152,7 +152,6 @@ input {
   // @include rem(font-size, 28px);
   font-weight: $font-medium;
   box-shadow: 0 -1px 3px rgba(125, 122, 122, .5);
-
   &:hover,
   &:focus {
     background: $color-primary;
@@ -200,6 +199,7 @@ input {
 .login-button {
   background: url('../img/login_icon--black.svg') $color-orange center center no-repeat;
   display: inline-block;
+  vertical-align: top;
   margin-right: 10px;
   &:hover,
   &:focus {
@@ -214,6 +214,7 @@ input {
   border-radius: 25px;
   border: 1px solid $color-orange;
   display: inline-block;
+  vertical-align: top;
   &:before {
     content: '';
     display: block;
