@@ -9,7 +9,7 @@ input {
 .btn-holder {
   margin: 0 auto;
   text-align: center;
-  max-width: 150px;
+  max-width: 170px;
 }
 
 .btn-wrapper {
@@ -157,6 +157,11 @@ input {
     background: $color-primary;
     color: $color-orange;
   }
+
+  &-big {
+    width: 70px;
+    height: 70px;
+  }
 }
 
 .add-button {
@@ -211,7 +216,7 @@ input {
   background: linear-gradient(to bottom, rgba(88, 88, 88, 1) 0%, rgba(0, 0, 0, 1) 100%) no-repeat;
   background-size: cover !important;
   color: $color-orange;
-  border-radius: 25px;
+  border-radius: 100%;
   border: 1px solid $color-orange;
   display: inline-block;
   vertical-align: top;
