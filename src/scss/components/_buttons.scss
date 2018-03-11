@@ -149,7 +149,7 @@ input {
   justify-content: center;
   border-radius: 100%;
   border: none;
-  // @include rem(font-size, 28px);
+  @include rem(font-size, 25px);
   font-weight: $font-medium;
   box-shadow: 0 -1px 3px rgba(125, 122, 122, .5);
   &:hover,
