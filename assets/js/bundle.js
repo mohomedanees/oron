@@ -87,13 +87,23 @@
 
 
 	function () {
-	  var body = $('body'),
-	  winWidth = $(window).width();
+	  // var body = $('body'),
+	  // winWidth = $(window).width();
+
+	  // if($('.button--round')[0] && winWidth < 992) {
+	  //   body.addClass('add-padding');
+	  // } else {
+	  //   body.removeClass('add-padding');
+	  // } 
+
+	  var wrapper = $('.wrapper'),
+	  winWidth = $(window).width(),
+	  btnRWHeight = $('.round-button__wrapper').outerHeight();
 
 	  if ($('.button--round')[0] && winWidth < 992) {
-	    body.addClass('add-padding');
+	    wrapper.css({ "padding-bottom": btnRWHeight + 65 + "px" });
 	  } else {
-	    body.removeClass('add-padding');
+	    wrapper.css({ "padding-bottom": btnRWHeight + "px" });
 	  }
 	};
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))

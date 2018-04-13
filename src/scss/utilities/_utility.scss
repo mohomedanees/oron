@@ -79,3 +79,7 @@
 .no-border {
   border-bottom: none;
 }
+
+.alert {
+  @include rem(font-size, $small-font-size);
+}

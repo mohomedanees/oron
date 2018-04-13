@@ -129,6 +129,10 @@ input {
   right: 0;
   padding: rem(15px);
   z-index: 1000;
+
+  @include grid-media($medium-screen) {
+    bottom: 0;
+  }
 }
 
 .btn__wrapper {
@@ -149,7 +153,6 @@ input {
   justify-content: center;
   border-radius: 100%;
   border: none;
-  @include rem(font-size, 25px);
   font-weight: $font-medium;
   box-shadow: 0 -1px 3px rgba(125, 122, 122, .5);
   &:hover,
@@ -203,6 +206,7 @@ input {
 
 .login-button {
   background: url('../img/login_icon--black.svg') $color-orange center center no-repeat;
+  background-size: 28px 28px !important;
   display: inline-block;
   vertical-align: top;
   margin-right: 10px;
@@ -226,8 +230,8 @@ input {
     background: url('../img/register_icon.svg') center center no-repeat;
     background-size: contain !important;
     margin: 0 auto;
-    width: 18px;
-    height: 18px;
+    width: 28px;
+    height: 28px;
   }
   &:hover,
   &:focus {
