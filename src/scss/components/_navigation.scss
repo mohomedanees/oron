@@ -170,6 +170,9 @@ Navigation
 }
 
 .close-icon {
+  position: absolute;
+  z-index: 1;
+  right: 0;
   display: block;
   text-align: right;
   margin-top: rem(15px);
