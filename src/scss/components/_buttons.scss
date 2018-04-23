@@ -15,9 +15,17 @@ input {
 .btn-label {
   text-align: center;
   display: inline-block;
+  font-size: $small-font-size;
+  font-weight: $font-normal;
+  margin-right: rem(20px);
+
+  &:last-child {
+    margin-right: 0;
+  }
 
   .b-btn {
     display: block;
+    margin: 0 0 5px;
   }
 }
 
@@ -226,7 +234,6 @@ input {
   background-size: 28px 28px !important;
   display: inline-block;
   vertical-align: top;
-  margin-right: 10px;
   // &:hover,
   // &:focus {
   //   background: url('../img/login_icon.svg') $color-primary center center no-repeat;
