@@ -12,6 +12,15 @@ input {
   max-width: 170px;
 }
 
+.btn-label {
+  text-align: center;
+  display: inline-block;
+
+  .b-btn {
+    display: block;
+  }
+}
+
 .btn-wrapper {
   text-align: center;
   @include grid-container;
@@ -91,15 +100,15 @@ input {
   padding: rem(0 4px);
   width: auto;
 
-  &:hover,
-  &:focus {
-    background: $color-primary;
-    .icon-bin--black {
-      &:before {
-        background: url('../img/bin-icon.svg') center center no-repeat;
-      }
-    }
-  }
+  // &:hover,
+  // &:focus {
+  //   background: $color-primary;
+  //   .icon-bin--black {
+  //     &:before {
+  //       background: url('../img/bin-icon.svg') center center no-repeat;
+  //     }
+  //   }
+  // }
 }
 
 .back-button {
@@ -111,16 +120,24 @@ input {
   align-items: center;
   justify-content: center;
 
-  &:hover,
-  &:focus {
-    background: $color-primary;
-
-    .icon-back--black {
-      &:before {
-        background: url('../img/back-icon.svg') center center no-repeat;
-      }
+  &--large {
+    display: inline-block;
+    .icon {
+      width: 25px;
+      height: 24px;
     }
   }
+
+  // &:hover,
+  // &:focus {
+  //   background: $color-primary;
+
+  //   .icon-back--black {
+  //     &:before {
+  //       background: url('../img/back-icon.svg') center center no-repeat;
+  //     }
+  //   }
+  // }
 }
 
 .round-button__wrapper {
@@ -155,11 +172,11 @@ input {
   border: none;
   font-weight: $font-medium;
   box-shadow: 0 -1px 3px rgba(125, 122, 122, .5);
-  &:hover,
-  &:focus {
-    background: $color-primary;
-    color: $color-orange;
-  }
+  // &:hover,
+  // &:focus {
+  //   background: $color-primary;
+  //   color: $color-orange;
+  // }
 
   &-big {
     width: 70px;
@@ -181,27 +198,27 @@ input {
 
 .save-button {
   background: url('../img/save-icon.svg') $color-orange center center no-repeat;
-  &:hover,
-  &:focus {
-    background: url('../img/save-icon--orange.svg') $color-primary center center no-repeat;
-  }
+  // &:hover,
+  // &:focus {
+  //   background: url('../img/save-icon--orange.svg') $color-primary center center no-repeat;
+  // }
 }
 
 .print-button {
   background: url('../img/print-icon--black.svg') $color-orange center center no-repeat;
   background-size: 18px !important;
-  &:hover,
-  &:focus {
-    background: url('../img/print-icon.svg') $color-primary center center no-repeat;
-  }
+  // &:hover,
+  // &:focus {
+  //   background: url('../img/print-icon.svg') $color-primary center center no-repeat;
+  // }
 }
 
 .cancel-button {
   background: url('../img/cancel-icon--black.svg') $color-orange center center no-repeat;
-  &:hover,
-  &:focus {
-    background: url('../img/cancel-icon.svg') $color-primary center center no-repeat;
-  }
+  // &:hover,
+  // &:focus {
+  //   background: url('../img/cancel-icon.svg') $color-primary center center no-repeat;
+  // }
 }
 
 .login-button {
@@ -210,10 +227,10 @@ input {
   display: inline-block;
   vertical-align: top;
   margin-right: 10px;
-  &:hover,
-  &:focus {
-    background: url('../img/login_icon.svg') $color-primary center center no-repeat;
-  }
+  // &:hover,
+  // &:focus {
+  //   background: url('../img/login_icon.svg') $color-primary center center no-repeat;
+  // }
 }
 
 .register-button {
@@ -233,12 +250,12 @@ input {
     width: 28px;
     height: 28px;
   }
-  &:hover,
-  &:focus {
-    background: $color-orange;
+  // &:hover,
+  // &:focus {
+  //   background: $color-orange;
 
-    &:before {
-      background: url('../img/register_icon--black.svg') center center no-repeat;
-    }
-  }
+  //   &:before {
+  //     background: url('../img/register_icon--black.svg') center center no-repeat;
+  //   }
+  // }
 }
