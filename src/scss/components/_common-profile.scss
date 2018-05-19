@@ -3,7 +3,7 @@ Common Profile Section
 -------------------- */
 .mprof-wrapper {
   display: flex;
-  align-items: center;
+  align-items: top;
   margin-bottom: rem(20px);
 
   &--dd {
@@ -46,6 +46,7 @@ Common Profile Section
 
 .mprof-content {
   float: left;
+  width: calc(100% - 95px);
   margin-left: rem(15px);
 }
 
