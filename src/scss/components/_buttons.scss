@@ -155,7 +155,7 @@ input {
   padding: rem(15px);
   z-index: 1000;
 
-  @include grid-media($medium-screen) {
+  @include grid-media($small-screen) {
     bottom: 0;
   }
 }
