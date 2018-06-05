@@ -112,10 +112,14 @@ ul li {
       width: 60px;
       height: 60px;
       border-radius: 100%;
-      border: 2px solid $color-lighter-gray;
+      border: 1px solid $color-lighter-gray;
       float: left;
       margin-right: rem(15px);
       background-size: cover !important;
+
+      &.square {
+        border-radius: 0;
+      }
 
       @include grid-media($small-screen) {
         width: 100px;
