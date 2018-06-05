@@ -3,7 +3,7 @@ Common Profile Section
 -------------------- */
 .mprof-wrapper {
   display: flex;
-  align-items: top;
+  align-items: flex-start;
   margin-bottom: rem(20px);
 
   &--dd {
