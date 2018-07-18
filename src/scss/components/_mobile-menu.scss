@@ -10,7 +10,7 @@ Mobile Menu
   padding: rem(5px 0);
   border-top: 2px solid $color-orange;
 
-  @include grid-media($small-screen) {
+  @include grid-media($large-screen) {
     display: none;
   }
 }
