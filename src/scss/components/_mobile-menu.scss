@@ -13,6 +13,14 @@ Mobile Menu
   @include grid-media($large-screen) {
     display: none;
   }
+
+  @media screen and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+    display: block;
+  }
+
+  @media (min-device-width: 800px) and (max-device-width: 1280px) and (orientation: landscape) {
+    display: block;
+  }
 }
 
 .mob-menu__column {
